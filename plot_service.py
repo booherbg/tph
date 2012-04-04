@@ -1,4 +1,6 @@
-from collections import Counter
+#from collections import Counter
+from backports import Counter
+
 import textwrap
 import math
 
@@ -59,8 +61,7 @@ def contrasting_color(input_color):
         (new_r, new_g, new_b) = (0, 0, 0)
     else:
         (new_r, new_g, new_b) = (255, 255, 255)
-
-    return "{:02x}{:02x}{:02x}".format(new_r, new_g, new_b)
+    return "{0:02x}{1:02x}{2:02x}".format(new_r, new_g, new_b) # BGB 4.04.2012
 
 
 def plot_service(results, target_stop_name, target_date, outfile):

@@ -1,4 +1,6 @@
-from collections import Counter, OrderedDict
+#from collections import OrderedDict
+
+from backports import OrderedDict, Counter
 
 from sqlalchemy.orm import contains_eager, eagerload
 
