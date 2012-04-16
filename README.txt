@@ -48,3 +48,6 @@ the second argument to tph.py.
 Note that each route staza in the configuration file can optionally
 contain its own target_date; this may be useful for generating plots
 for weekday and weekend service in the same run.
+
+sudo easy_install transitfeed
+

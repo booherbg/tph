@@ -66,4 +66,5 @@ for section in config.sections():
                                                    override_headsign,
                                                    override_direction,
                                                    **args)
+        print outfile
         plot_service(results, target_stop_name, target_date, outfile)
